@@ -23,6 +23,9 @@ jobs:
       matrix:
         branch: ["main"]
     steps:
+      - name: "Checkout Repository"
+        continue-on-error: true
+        uses: actions/checkout@v4
       - uses: jfrog/frogbot@v2
         with:
           oidc-provider-name: "jfrog-githuboidc"    # ✅ Use the provider name configured in JFrog
