@@ -33,4 +33,4 @@ jobs:
         env:
           JF_URL: ${{ vars.ARTIFACTORY_URL }}        # JFrog Platform URL
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          JF_WORKING_DIR: /JFTD-110-GitHub_Actions_for_JFrog/helloworld_npm
+          JF_WORKING_DIR: JFTD-110-GitHub_Actions_for_JFrog/helloworld_npm
