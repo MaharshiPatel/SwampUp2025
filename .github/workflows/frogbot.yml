@@ -27,8 +27,10 @@ jobs:
         continue-on-error: true
         uses: actions/checkout@v4
       - uses: jfrog/frogbot@v2
+         
         with:
           oidc-provider-name: "jfrog-githuboidc"    # ✅ Use the provider name configured in JFrog
         env:
           JF_URL: ${{ vars.ARTIFACTORY_URL }}        # JFrog Platform URL
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JF_WORKING_DIR: /JFTD-110-GitHub_Actions_for_JFrog/helloworld_npm
