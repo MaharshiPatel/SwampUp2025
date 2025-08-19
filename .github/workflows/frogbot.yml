@@ -28,4 +28,4 @@ jobs:
           oidc-provider-name: "jfrog-githuboidc"    # ✅ Use the provider name configured in JFrog
         env:
           JF_URL: ${{ vars.ARTIFACTORY_URL }}        # JFrog Platform URL
-          JF_GIT_TOKEN: ${{ vars.GITHUB_TOKEN }}
+          JF_GIT_TOKEN: ${{ vars.GIT_TOKEN }}
